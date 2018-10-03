@@ -1,0 +1,117 @@
+body {
+	background-color: rgb(40,0,0);
+	margin: 0px 10%;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+h2{
+	font-size: 22px;
+	font-family: times new roman;
+	color: orange;
+	border-radius: 100px;
+	background-color: rgb(70,0,0);
+	padding: 0px 0px 0px 0px;
+	margin: 10px;
+	width: 250px;
+}
+
+#top{
+    background: rgb(60,0,0);
+	margin-top: 10px;
+	border-radius: 100px 100px 0px 0px;
+}
+
+.center{
+	float: right;
+	background-color: rgb(50,0,0);
+	width: 82%;
+}
+
+#lateral{
+	background-color: rgb(60,0,0);
+	width: 18%;
+}
+
+#boxmenu{
+	border-radius: 10px;
+}
+
+#menu{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border-radius: 0px 0px 10px 10px;
+	background-color: rgb(60,0,0);
+}
+
+#menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	border-radius: 0px 0px 10px 10px;
+	
+}
+
+#menu ul li{
+	position: relative;
+}
+
+#menu li ul{
+	position: relative;
+	top: 0;
+	display: none;
+
+}
+
+#menu ul li a{
+	display: block;
+	text-decoration: none;
+	
+	color: orange;
+	background: rgb(70,0,0);
+	padding: 10px;
+
+
+}
+
+#menu li ul li a{
+	color: orange;
+	background: rgb(80,0,0);
+	padding: 5px;
+	font-size: 17px;
+}
+
+#menu li:hover ul{
+	display: block;
+}
+
+#menu ul li a:hover{
+	text-decoration: underline;
+	font-weight: bold;
+	background: 
+}
+
+hr{
+	border-color: black;
+}
+
+#vidhome{
+	
+}
+
+.game-info-content{
+	background-color: rgb(70,0,0);
+	border-radius: 20px;
+	margin: 0px 10px 0px 10px;
+	width: 50%;
+}
+
+#phome{
+	color: orange;
+	padding: 5px;
+	margin: 0px 10px 0px 10px;
+}
+
