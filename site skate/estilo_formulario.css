@@ -1,0 +1,16 @@
+form{
+	background-image: linear-gradient(to bottom, Goldenrod, SandyBrown);
+	padding: 2%;
+	border-radius: 50px;
+	width: 40%
+}
+
+font{
+	margin: 0px;
+	color: red;
+	font-size: 10px;
+}
+
+#botao{
+	float: right;
+}
