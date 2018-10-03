@@ -1,0 +1,14 @@
+body{
+	text-align: center;
+	font-size: 20px;
+	font-family: comic sans;
+}
+
+#form{
+	text-align: center;
+	background-color: grey;
+	border-radius: 20px;
+	border-color: blue;
+	border-style: solid;
+	width: 50%;
+}

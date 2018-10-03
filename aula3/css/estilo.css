@@ -1,0 +1,28 @@
+body {
+	margin: 0px;
+}
+
+#topo {
+	height: 200px;
+	background-color: black;
+
+}
+
+#centro {
+	height: 800px;
+	width: 80%;
+	background-color: green;
+	position: absolute;
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+}
+
+#direita {
+	height: 800px;
+	width: 20%;
+	background-color: red;
+	position: absolute;
+	margin-left: 80%;
+	text-align: center;
+	padding-top: 10px;
+}

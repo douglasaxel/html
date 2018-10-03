@@ -1,0 +1,66 @@
+body{
+	margin: 0;
+}
+
+#top{
+	height: 240px;
+	background-color: lime;
+	
+	background-repeat: no-repeat;
+}
+
+#menu{
+	height: 50px;
+	background-color: black;
+}
+
+li{
+	color:yellow;
+	float: left;
+	display: block;
+	padding: 10px;
+	font-size: 25px;
+	margin-left: 100px;
+	text-transform: uppercase;
+}
+
+li a {
+	text-decoration: none;
+	color:white;
+}
+
+#center{
+	background-color: #F5DEB3;
+	padding: 50px 50px 50px 100px;
+	
+}
+p {
+	color: black;
+	font-size: 20px;
+	text-indent: 50px;
+	font-family: Monotype Corsiva;
+}
+
+#p1 {
+	color:purple;
+	font-size: 20px;
+	text-indent: 50px;
+	font-family: Monotype Corsiva;
+}
+
+
+h1{
+	color: red;
+}
+
+th{
+	background: cyan;
+}
+
+td{
+	background: lime;
+}
+
+table{
+	border-radius: 5px;
+}
