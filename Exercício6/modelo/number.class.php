@@ -11,67 +11,33 @@ class Number{
   public function setNum3(float $num3):void{$this->num3 = $num3;}
   public function getNum3():float{return $this->num3;}
 
-  public function crescentOrder():string{
-    $b;
-    $m;
-    $s;
-    if ($this->num1 > $this->num2 && $this->num1 > $this->num3) {
-      $b = $this->num1;
-    } else if ($this->num1 > $this->num2 || $this->num1 > $this->num3) {
-      $m = $this->num1;
-    } else {
-      $s = $this->num1;
+  public function decrescentOrder():string{
+    if ($this->num1 > $this->num2 && $this->num2 > $this->num3) {
+      return '<p>Biggest: '.$this->num1.'<br>Mediun: '.$this->num2.'<br>Smallest: '.$this->num3.'</p>';
+    } else if ($this->num1 > $this->num3 && $this->num3 > $this->num2) {
+      return '<p>Biggest: '.$this->num1.'<br>Mediun: '.$this->num3.'<br>Smallest: '.$this->num2.'</p>';
+    } else if ($this->num2 > $this->num1 && $this->num1 > $this->num3) {
+      return '<p>Biggest: '.$this->num2.'<br>Mediun: '.$this->num1.'<br>Smallest: '.$this->num3.'</p>';
+    } else if ($this->num2 > $this->num3 && $this->num3 > $this->num1) {
+      return '<p>Biggest: '.$this->num2.'<br>Mediun: '.$this->num3.'<br>Smallest: '.$this->num1.'</p>';
+    } else if ($this->num3 > $this->num1 && $this->num1 > $this->num2) {
+      return '<p>Biggest: '.$this->num3.'<br>Mediun: '.$this->num1.'<br>Smallest: '.$this->num2.'</p>';
     }
-
-    if ($this->num2 > $this->num1 && $this->num2 > $this->num3) {
-      $b = $this->num2;
-    } else if ($this->num2 > $this->num1 || $this->num2 > $this->num3) {
-      $m = $this->num2;
-    } else {
-      $s = $this->num2;
-    }
-
-    if ($this->num3 > $this->num2 && $this->num3 > $this->num1) {
-      $b = $this->num3;
-    } else if ($this->num3 > $this->num2 || $this->num3 > $this->num1) {
-      $m = $this->num3;
-    } else {
-      $s = $this->num3;
-    }
-    return '<p> Biggest: '.$b.
-           '<br>Medium: '.$m.
-           '<br>Smallest: '.$s.'</p>';
+    return '<p>Biggest: '.$this->num3.'<br>Mediun: '.$this->num2.'<br>Smallest: '.$this->num1.'</p>';
   }
 
-  public function decrescentOrder(){
-    $b;
-    $m;
-    $s;
-    if ($this->num1 < $this->num2 && $this->num1 < $this->num3) {
-      $s = $this->num1;
-    } else if ($this->num1 > $this->num2 || $this->num1 > $this->num3) {
-      $m = $this->num1;
-    } else {
-      $b = $this->num1;
+  public function crescentOrder(){
+    if ($this->num1 < $this->num2 && $this->num2 < $this->num3) {
+      return '<p>Smallest: '.$this->num1.'<br>Mediun: '.$this->num2.'<br>Biggest: '.$this->num3.'</p>';
+    } else if ($this->num1 < $this->num3 && $this->num3 < $this->num2) {
+      return '<p>Smallest: '.$this->num1.'<br>Mediun: '.$this->num3.'<br>Biggest: '.$this->num2.'</p>';
+    } else if ($this->num2 < $this->num1 && $this->num1 < $this->num3) {
+      return '<p>Smallest: '.$this->num2.'<br>Mediun: '.$this->num1.'<br>Biggest: '.$this->num3.'</p>';
+    } else if ($this->num2 < $this->num3 && $this->num3 < $this->num1) {
+      return '<p>Smallest: '.$this->num2.'<br>Mediun: '.$this->num3.'<br>Biggest: '.$this->num1.'</p>';
+    } else if ($this->num3 < $this->num1 && $this->num1 < $this->num2) {
+      return '<p>Smallest: '.$this->num3.'<br>Mediun: '.$this->num1.'<br>Biggest: '.$this->num2.'</p>';
     }
-
-    if ($this->num2 < $this->num1 && $this->num2 < $this->num3) {
-      $s = $this->num2;
-    } else if ($this->num2 < $this->num1 || $this->num2 < $this->num3) {
-      $m = $this->num2;
-    } else {
-      $b = $this->num2;
-    }
-
-    if ($this->num3 < $this->num2 && $this->num3 < $this->num1) {
-      $s = $this->num3;
-    } else if ($this->num3 < $this->num2 || $this->num3 < $this->num1) {
-      $m = $this->num3;
-    } else {
-      $b = $this->num3;
-    }
-    return '<p>Smallest: '.$s.
-           '<br>Medium: '.$m.
-           '<br>Biggest: '.$b.'</p>';
+    return '<p>Smallest: '.$this->num3.'<br>Mediun: '.$this->num2.'<br>Biggest: '.$this->num1.'</p>';
   }
 }

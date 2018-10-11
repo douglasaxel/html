@@ -9,6 +9,5 @@ $b->setNum3($_POST['num3']);
 echo '<p>Number 1: '.$b->getNum1().
      '<br>Number 2: '.$b->getNum2().
      '<br>Number 3: '.$b->getNum3().
-     '<br>Crescent Order: '.$b->crescentOrder().
-     '<br>'.
+     '<p>Crescent Order: '.$b->crescentOrder().
      '<br>Decrescent Order: '.$b->decrescentOrder().'<p>';
